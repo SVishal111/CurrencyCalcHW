@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Exchange JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <header></header> -->
+
+    <main>
+        <div class="calcContainer">
+
+            <h1>JS Money Exchange Rate</h1>
+
+            <label for="#" class="operator">Enter Money Conversion: </label>
+            <select id="oprOptions">
+                <option value="INRUSD">Indian Rupees to US Dollars</option>
+                <option value="INRJPY">Indian Rupees to Japanese Yen</option>
+                <option value="INREUR">Indian Rupees to European Euro</option>
+                <option value="INRAED">Indian Rupees to UAE Dirham</option>
+
+                <option value="USDINR">US Dollars to Indian Rupees</option>
+                <option value="USDJPY">US Dollars to Japanese Yen</option>
+                <option value="USDEUR">US Dollars to European Euro</option>
+                <option value="USDAED">US Dollars to UAE Dirham</option>
+
+                <option value="JPYUSD">Japanese Yen to US Dollars</option>
+                <option value="JPYINR">Japanese Yen to Indian Rupees</option>
+                <option value="JPYEUR">Japanese Yen to European Euro</option>
+                <option value="JPYAED">Japanese Yen to UAE Dirham</option>
+                
+                <option value="EURUSD">European Euro to US Dollars</option>
+                <option value="EURJPY">European Euro to Indian Rupees</option>
+                <option value="EURINR">European Euro to European Euro</option>
+                <option value="EURAED">European Euro to UAE Dirham</option>
+
+                <option value="AEDUSD">UAE Dirham to US Dollars</option>
+                <option value="AEDJPY">UAE Dirham to Japanese Yen</option>
+                <option value="AEDEUR">UAE Dirham to European Euro</option>
+                <option value="AEDINR">UAE Dirham to Indian Rupees</option>
+
+            </select>
+
+            <label for="#" class="num1">Enter Money Value: </label>
+            <input type="text" name="num1" id="num1" placeholder="">
+
+            <button class="resultbtn" id="resultbtn" onclick="currencyCalculate()">Calculate</button>
+
+            <label for="#" class="result">The Exchange Value is: </label>
+            <input type="text" name="result" id="resultShow" readonly>
+
+        </div>
+    </main>
+
+    <!-- <footer></footer> -->
+
+    <script src="script.js"></script>
+</body>
+</html>
